@@ -1,0 +1,100 @@
+﻿.container{
+    display:grid;
+    grid-gap: 8px 8px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7,150px);
+    margin:2rem auto;
+    max-width:1000px;
+    width:90%;
+}
+
+header{
+    grid-column: 1 / span 2;
+  
+}
+
+about {
+    grid-row: 2 / span 2;
+    background-image: url('images/CoffeeHeadShot.jpg');
+    background-size:cover;
+}
+
+menu {
+    grid-column: 2;
+    grid-row: 2 /span 2;
+    background-image: url('images/chalkboard_texture_mc2015_by_mattiamc-d8dbnac.jpg');
+    background-size:cover;
+    margin:0px;
+    padding:0px;
+
+}
+
+aboutTwo{
+    grid-row:4 ;
+    background-color: black;
+    font-family:fantasy;
+    font-size:14px;
+    color:orange;
+}
+
+.grid-item-4 {
+    grid-column: 1;
+    grid-row: 5 / span 2;
+    background-image: url('images/map.PNG');
+    background-size:cover;
+}
+
+
+
+slideshow{
+    grid-column:2;
+    grid-row:4 / span 3;
+    background-color: darkslategrey;
+}
+
+.footer{
+    grid-column:1 / span 2;
+    grid-row:7;
+    background-color:orange;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: Right;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+        }
+
+body {
+    background-image: url('images/coffee-beans-1.jpg');
+    background-size:cover;
+}
+
+.logo{
+    font-size:75px;
+    color:darkorange;
+    font-family:  fantasy;
+}
+
+menu ul{
+display:flex;
+justify-content:space-between;
+}
